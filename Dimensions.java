@@ -12,7 +12,7 @@ public class Dimensions {
         double volume = width * length * heigth;
         return volume;
     }
-    public Dimensions setDimensions (double width, double length, double heigth) {
+    public Dimensions setWidth (double width) {
         return new Dimensions(width, length, heigth);
     }
 }
