@@ -13,22 +13,16 @@ public class Cargo {
         this.fragile = fragile;
         this.dimensions = dimensions;
     }
-    public double getWeigth () {
-        return weigth;
+    public Cargo setCargo (double weigth, String diveleryAdress, boolean flip, String registrationNumber, boolean fragile, Dimensions dimensions) {
+        return new Cargo(weigth, diveleryAdress, flip, registrationNumber, fragile, dimensions);
     }
-    public String getDiveleryAdress () {
-        return diveleryAdress;
-    }
-    public boolean getFlip () {
-        return flip;
-    }
-    public String getRegistrationNumber () {
-        return registrationNumber;
-    }
-    public boolean getFragile () {
-        return fragile;
-    }
-    public Dimensions getDimensions () {
-        return dimensions;
+
+    public String toString() {
+        return "Вес: " + weigth + "\n" +
+                "Адрес доставки: " + diveleryAdress + "\n" +
+                "Хрупкое: " + flip + "\n" +
+                "Регистрационный номер: " + registrationNumber + "\n" +
+                "Можно переворачивать: " + fragile + "\n" +
+                dimensions;
     }
 }
